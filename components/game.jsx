@@ -16,14 +16,14 @@ class Game extends React.Component {
     if (this.state.board.lost() || this.state.board.won()) {
         const text = this.state.board.won() ? "You won!" : "You lost!";
        
-    }
+    
 
     return (
         <div>
             <Board board={this.state.board} updateGame={this.updateGame} />
         </div>
     );
-}
+    
     }
 }
 
